@@ -1,0 +1,23 @@
+numeros = []
+pares = []
+impares = []
+
+for i in range(10):
+    numero = int(input("Digite um valor: "))
+    numeros.append(numero)
+
+    if numero % 2 == 0:
+        pares.append(numero)
+    else:
+        impares.append(numero)
+
+print("Números Pares:", pares)
+print("Números Ímpares:", impares)
+
+print("Quantidade de Números Pares:", len(pares))
+print("Quantidade de Números Ímpares:", len(impares))
+
+soma_pares = sum(pares)
+soma_impares = sum(impares)
+print("Soma dos Números Pares:", soma_pares)
+print("Soma dos Números Ímpares:", soma_impares)
